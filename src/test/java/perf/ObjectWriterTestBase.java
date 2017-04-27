@@ -1,8 +1,8 @@
 package perf;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
-import com.fasterxml.jackson.databind.SerializationFeature;
+import shaded.com.fasterxml.jackson.databind.ObjectMapper;
+import shaded.com.fasterxml.jackson.databind.ObjectWriter;
+import shaded.com.fasterxml.jackson.databind.SerializationFeature;
 
 abstract class ObjectWriterTestBase<T1,T2>
 {

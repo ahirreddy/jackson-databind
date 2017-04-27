@@ -3,12 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.fasterxml.jackson</groupId>
+    <groupId>shaded.com.fasterxml.jackson</groupId>
     <artifactId>jackson-parent</artifactId>
     <version>2.4</version>
   </parent>
 
-  <groupId>com.fasterxml.jackson.core</groupId>
+  <groupId>shaded.com.fasterxml.jackson.core</groupId>
   <artifactId>jackson-databind</artifactId>
   <version>2.4.5</version>
   <name>jackson-databind</name>
@@ -25,54 +25,54 @@
 
   <properties>
     <osgi.export>
-com.fasterxml.jackson.databind,
-com.fasterxml.jackson.databind.annotation,
-com.fasterxml.jackson.databind.cfg,
-com.fasterxml.jackson.databind.deser,
-com.fasterxml.jackson.databind.deser.impl,
-com.fasterxml.jackson.databind.deser.std,
-com.fasterxml.jackson.databind.exc,
-com.fasterxml.jackson.databind.ext,
-com.fasterxml.jackson.databind.introspect,
-com.fasterxml.jackson.databind.jsonschema,
-com.fasterxml.jackson.databind.jsonFormatVisitors,
-com.fasterxml.jackson.databind.jsontype,
-com.fasterxml.jackson.databind.jsontype.impl,
-com.fasterxml.jackson.databind.module,
-com.fasterxml.jackson.databind.node,
-com.fasterxml.jackson.databind.ser,
-com.fasterxml.jackson.databind.ser.impl,
-com.fasterxml.jackson.databind.ser.std,
-com.fasterxml.jackson.databind.type,
-com.fasterxml.jackson.databind.util
+shaded.com.fasterxml.jackson.databind,
+shaded.com.fasterxml.jackson.databind.annotation,
+shaded.com.fasterxml.jackson.databind.cfg,
+shaded.com.fasterxml.jackson.databind.deser,
+shaded.com.fasterxml.jackson.databind.deser.impl,
+shaded.com.fasterxml.jackson.databind.deser.std,
+shaded.com.fasterxml.jackson.databind.exc,
+shaded.com.fasterxml.jackson.databind.ext,
+shaded.com.fasterxml.jackson.databind.introspect,
+shaded.com.fasterxml.jackson.databind.jsonschema,
+shaded.com.fasterxml.jackson.databind.jsonFormatVisitors,
+shaded.com.fasterxml.jackson.databind.jsontype,
+shaded.com.fasterxml.jackson.databind.jsontype.impl,
+shaded.com.fasterxml.jackson.databind.module,
+shaded.com.fasterxml.jackson.databind.node,
+shaded.com.fasterxml.jackson.databind.ser,
+shaded.com.fasterxml.jackson.databind.ser.impl,
+shaded.com.fasterxml.jackson.databind.ser.std,
+shaded.com.fasterxml.jackson.databind.type,
+shaded.com.fasterxml.jackson.databind.util
     </osgi.export>
     <osgi.import>
-com.fasterxml.jackson.annotation,
-com.fasterxml.jackson.core,
-com.fasterxml.jackson.core.base,
-com.fasterxml.jackson.core.format,
-com.fasterxml.jackson.core.json,
-com.fasterxml.jackson.core.io,
-com.fasterxml.jackson.core.util,
-com.fasterxml.jackson.core.type,
+shaded.com.fasterxml.jackson.annotation,
+shaded.com.fasterxml.jackson.core,
+shaded.com.fasterxml.jackson.core.base,
+shaded.com.fasterxml.jackson.core.format,
+shaded.com.fasterxml.jackson.core.json,
+shaded.com.fasterxml.jackson.core.io,
+shaded.com.fasterxml.jackson.core.util,
+shaded.com.fasterxml.jackson.core.type,
 org.xml.sax,org.w3c.dom, org.w3c.dom.bootstrap, org.w3c.dom.ls,
 javax.xml.datatype, javax.xml.namespace, javax.xml.parsers
 </osgi.import>
 
     <!-- Generate PackageVersion.java into this directory. -->
-    <packageVersion.dir>com/fasterxml/jackson/databind/cfg</packageVersion.dir>
-    <packageVersion.package>com.fasterxml.jackson.databind.cfg</packageVersion.package>
+    <packageVersion.dir>shaded.com.fasterxml.jackson/databind/cfg</packageVersion.dir>
+    <packageVersion.package>shaded.com.fasterxml.jackson.databind.cfg</packageVersion.package>
   </properties>
 
   <dependencies>
     <!-- Builds on core streaming API; also needs core annotations -->
     <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
+      <groupId>shaded.com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
       <version>2.4.0</version>
     </dependency>
     <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
+      <groupId>shaded.com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
       <version>2.4.5</version>
     </dependency>
@@ -113,7 +113,7 @@ javax.xml.datatype, javax.xml.namespace, javax.xml.parsers
         <version>${surefire.version}</version>
         <configuration>
           <excludes>
-            <exclude>com/fasterxml/jackson/failing/*.java</exclude>
+            <exclude>shaded.com.fasterxml.jackson/failing/*.java</exclude>
           </excludes>
         </configuration>
       </plugin>
