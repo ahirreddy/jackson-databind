@@ -1,6 +1,6 @@
 package perf;
 
-import shaded.com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @JsonFormat(shape=JsonFormat.Shape.ARRAY)
 final class RecordAsArray extends RecordBase

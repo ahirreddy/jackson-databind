@@ -2,8 +2,8 @@ package perf;
 
 import java.util.*;
 
-import shaded.com.fasterxml.jackson.annotation.JsonFormat;
-import shaded.com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonFormat(shape=JsonFormat.Shape.ARRAY)
 @JsonPropertyOrder({"content", "images"})

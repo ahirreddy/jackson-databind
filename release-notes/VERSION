@@ -64,7 +64,7 @@ Project: jackson-databind
 
 Special one-off "micro patch" for:
 
-#503: Concurrency issue inside shaded.com.fasterxml.jackson.databind.util.LRUMap.get(Object)
+#503: Concurrency issue inside com.fasterxml.jackson.databind.util.LRUMap.get(Object)
  (reported by fjtc@github)
 
 2.4.1.1 (18-Jun-2014)
@@ -374,7 +374,7 @@ New features:
 Other:
 
 #126: Update JDK baseline to 1.6
-* API under 'shaded.com.fasterxml.jackson.databind.jsonFormatVisitors' changed significantly
+* API under 'com.fasterxml.jackson.databind.jsonFormatVisitors' changed significantly
   based on experiences with external JSON Schema generator.
 * Version information accessed via code-generated access class, instead of reading
   VERSION.txt

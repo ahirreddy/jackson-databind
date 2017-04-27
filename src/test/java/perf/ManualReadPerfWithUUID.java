@@ -3,11 +3,11 @@ package perf;
 import java.io.IOException;
 import java.util.UUID;
 
-import shaded.com.fasterxml.jackson.core.JsonProcessingException;
-import shaded.com.fasterxml.jackson.databind.DeserializationContext;
-import shaded.com.fasterxml.jackson.databind.ObjectMapper;
-import shaded.com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import shaded.com.fasterxml.jackson.databind.deser.std.FromStringDeserializer;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.deser.std.FromStringDeserializer;
 
 public class ManualReadPerfWithUUID extends ObjectReaderTestBase
 {

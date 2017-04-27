@@ -3,12 +3,12 @@ package perf;
 import java.io.IOException;
 import java.util.UUID;
 
-import shaded.com.fasterxml.jackson.core.JsonGenerationException;
-import shaded.com.fasterxml.jackson.core.JsonGenerator;
-import shaded.com.fasterxml.jackson.databind.ObjectMapper;
-import shaded.com.fasterxml.jackson.databind.SerializerProvider;
-import shaded.com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import shaded.com.fasterxml.jackson.databind.ser.std.StdScalarSerializer;
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.StdScalarSerializer;
 
 public class ManulWritePerfWithUUID
     extends ObjectWriterTestBase<UUIDFast, UUIDSlow>

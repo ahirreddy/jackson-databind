@@ -1,6 +1,6 @@
 package perf;
 
-import shaded.com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class ManualWritePerfWithRecord
     extends ObjectWriterTestBase<Record, RecordAsArray>
