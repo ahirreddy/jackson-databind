@@ -1,11 +1,11 @@
-package shaded.com.fasterxml.jackson.databind.jsontype;
+package com.fasterxml.jackson.databind.jsontype;
 
 import java.io.IOException;
 
-import shaded.com.fasterxml.jackson.annotation.JsonTypeInfo.As;
-import shaded.com.fasterxml.jackson.core.JsonGenerator;
-import shaded.com.fasterxml.jackson.core.JsonProcessingException;
-import shaded.com.fasterxml.jackson.databind.BeanProperty;
+import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.BeanProperty;
 
 /**
  * Helper class used in cases where we caller has to override source

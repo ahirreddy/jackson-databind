@@ -60,7 +60,7 @@ javax.xml.datatype, javax.xml.namespace, javax.xml.parsers
 </osgi.import>
 
     <!-- Generate PackageVersion.java into this directory. -->
-    <packageVersion.dir>shaded/com/fasterxml/jackson/databind/cfg</packageVersion.dir>
+    <packageVersion.dir>com/fasterxml/jackson/databind/cfg</packageVersion.dir>
     <packageVersion.package>com.fasterxml.jackson.databind.cfg</packageVersion.package>
   </properties>
 
