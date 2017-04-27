@@ -2,8 +2,8 @@ package perf;
 
 import java.util.Map;
 
-import com.fasterxml.jackson.core.*;
-import com.fasterxml.jackson.databind.*;
+import shaded.com.fasterxml.jackson.core.*;
+import shaded.com.fasterxml.jackson.databind.*;
 
 public class ManualReadPerfUntyped extends ObjectReaderTestBase
 {
