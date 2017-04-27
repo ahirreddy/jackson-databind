@@ -17,11 +17,11 @@ Naming of classes uses word 'JSON' in many places even though there is no actual
 
 ## Maven
 
-Functionality of this package is contained in Java package `com.fasterxml.jackson.databind`, and can be used using following Maven dependency:
+Functionality of this package is contained in Java package `shaded.com.fasterxml.jackson.databind`, and can be used using following Maven dependency:
 
 ```xml
 <dependency>
-  <groupId>com.fasterxml.jackson.core</groupId>
+  <groupId>shaded.com.fasterxml.jackson.core</groupId>
   <artifactId>jackson-databind</artifactId>
   <version>2.3.3</version>
 </dependency>
@@ -33,12 +33,12 @@ If so, also add:
 ```xml
 <dependency>
   <!-- note: typically only ".0" patch version exists for core annotations -->
-  <groupId>com.fasterxml.jackson.core</groupId>
+  <groupId>shaded.com.fasterxml.jackson.core</groupId>
   <artifactId>jackson-annotations</artifactId>
   <version>2.3.0</version>
 </dependency>
 <dependency>
-  <groupId>com.fasterxml.jackson.core</groupId>
+  <groupId>shaded.com.fasterxml.jackson.core</groupId>
   <artifactId>jackson-core</artifactId>
   <version>2.3.1</version>
 </dependency>
@@ -48,7 +48,7 @@ but note that this is optional, and only necessary if there are conflicts betwee
 
 ## Non-Maven
 
-For non-Maven use cases, you download jars from [Central Maven repository](http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/).
+For non-Maven use cases, you download jars from [Central Maven repository](http://repo1.maven.org/maven2/shaded.com.fasterxml.jackson/core/jackson-databind/).
 
 Databind jar is also a functional OSGi bundle, with proper import/export declarations, so it can be use on OSGi container as is.
 
@@ -72,7 +72,7 @@ public class MyValue {
 }
 ```
 
-we will need a `com.fasterxml.jackson.databind.ObjectMapper` instance, used for all data-binding, so let's construct one:
+we will need a `shaded.com.fasterxml.jackson.databind.ObjectMapper` instance, used for all data-binding, so let's construct one:
 
 ```java
 ObjectMapper mapper = new ObjectMapper(); // create once, reuse
@@ -370,7 +370,7 @@ Project contains versions 2.0 and above: source code for earlier (1.x) versions 
 Main differences compared to 1.0 "mapper" jar are:
 
 * Maven build instead of Ant
-* Java package is now `com.fasterxml.jackson.databind` (instead of `org.codehaus.jackson.map`)
+* Java package is now `shaded.com.fasterxml.jackson.databind` (instead of `org.codehaus.jackson.map`)
 
 -----
 

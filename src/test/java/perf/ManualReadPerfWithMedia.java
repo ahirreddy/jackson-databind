@@ -1,9 +1,9 @@
 package perf;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.introspect.Annotated;
-import com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector;
+import shaded.com.fasterxml.jackson.annotation.JsonFormat;
+import shaded.com.fasterxml.jackson.databind.ObjectMapper;
+import shaded.com.fasterxml.jackson.databind.introspect.Annotated;
+import shaded.com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector;
 
 public class ManualReadPerfWithMedia extends ObjectReaderTestBase
 {

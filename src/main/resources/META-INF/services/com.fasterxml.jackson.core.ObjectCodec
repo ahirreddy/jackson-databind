@@ -1,1 +1,1 @@
-com.fasterxml.jackson.databind.ObjectMapper
+shaded.com.fasterxml.jackson.databind.ObjectMapper

@@ -3,8 +3,8 @@ package perf;
 import java.io.File;
 import java.util.*;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
+import shaded.com.fasterxml.jackson.databind.ObjectMapper;
+import shaded.com.fasterxml.jackson.databind.ObjectWriter;
 
 /* Test modified from json-parsers-benchmark, to be able to profile
  * Jackson implementation.

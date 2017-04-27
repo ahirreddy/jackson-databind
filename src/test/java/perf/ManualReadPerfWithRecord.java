@@ -1,6 +1,6 @@
 package perf;
 
-import com.fasterxml.jackson.databind.*;
+import shaded.com.fasterxml.jackson.databind.*;
 
 /**
  * Simple manually run micro-benchmark for checking effects of (de)serializer
